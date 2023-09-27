@@ -1,0 +1,63 @@
+.clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.clients .client-opinion {
+  width: 100%;
+  max-width: 800px;
+  margin-left: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.clients .client-opinion .client-image-left .GirlClient {
+  background-image: url(../images/GirlClient.jpg);
+  width: 260px;
+  height: 150px;
+  margin-top: 40px;
+}
+.clients .client-opinion .client-comment-right {
+  width: 50%;
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: italic;
+  text-decoration: none;
+}
+.clients .client-opinion .client-comment-right .name1 {
+  margin-top: 10px;
+  margin-left: 300px;
+  width: 50%;
+  font-size: 20px;
+  font-family: Open-Sans;
+  color: #79ADDC;
+}
+@font-face {
+  font-family: Open-Sans;
+  src: url(../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+@media screen and (max-width: 800px) {
+  .client-opinion {
+    max-width: 800px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .client-opinion .client-image-left {
+    margin-top: 20px;
+  }
+  .client-opinion .client-comment-right {
+    margin-top: 20px;
+  }
+}
